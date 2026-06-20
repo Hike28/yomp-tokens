@@ -1,0 +1,16 @@
+{
+  "name": "yomp-tokens",
+  "version": "1.0.0",
+  "description": "Shared DTCG token source for the Yomp Heritage palette, built by Style Dictionary into per-platform outputs.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "style-dictionary build --config config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "style-dictionary": "^5.4.4"
+  }
+}

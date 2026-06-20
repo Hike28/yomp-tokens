@@ -1,0 +1,3 @@
+# Dependencies only. Build outputs in build/ are COMMITTED — consumers read
+# them via git submodule and never run Style Dictionary. Do NOT ignore build/.
+node_modules/

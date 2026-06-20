@@ -1,0 +1,9 @@
+{
+  "_comment": "PLACEHOLDER — replaced in the authoring slice.",
+  "page": {
+    "bg": {
+      "$value": "{brand.forest}",
+      "$type": "color"
+    }
+  }
+}
