@@ -1,6 +1,6 @@
 import StyleDictionary from "style-dictionary";
 
-import tailwindTheme from "./formats/tailwind-theme.js";
+import webCssVars from "./formats/web-css-vars.js";
 import composeKotlin from "./formats/compose-kotlin.js";
 
 /**
@@ -19,19 +19,28 @@ StyleDictionary.registerTransform({
 /**
  * name/yomp-kotlin — camelCase of the token path.
  *   brand/forest → brandForest
+ *
+ * Some leaf keys carry an embedded dash (e.g. `forest-tint`) where collapsing a
+ * sub-segment was the only way to keep a token both a leaf AND a sibling of
+ * longer names without making it a group — see tokens/primitives.tokens.json.
+ * Splitting on `-` after the path join folds those into the camelCase too, so
+ * every emitted Kotlin identifier stays valid (`brandForestTint`). This only
+ * affects the Android name; the web `--brand-forest-tint` name is unchanged.
  */
 StyleDictionary.registerTransform({
   name: "name/yomp-kotlin",
   type: "name",
   transform: (token) =>
     token.path
+      .join("-")
+      .split("-")
       .map((part, i) =>
         i === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1)
       )
       .join(""),
 });
 
-StyleDictionary.registerFormat(tailwindTheme);
+StyleDictionary.registerFormat(webCssVars);
 StyleDictionary.registerFormat(composeKotlin);
 
 export default {
@@ -41,7 +50,15 @@ export default {
       // Name transform only — values pass through verbatim (no value/colour group).
       transforms: ["name/yomp-css"],
       buildPath: "build/web/",
-      files: [{ destination: "theme.css", format: "yomp/tailwind-theme" }],
+      files: [
+        {
+          destination: "tokens.css",
+          format: "web/css-vars",
+          // Emit aliases as `var(--target)` rather than the resolved value, so
+          // the output matches globals.css's `var(--…)` aliases (no-op proof).
+          options: { outputReferences: true },
+        },
+      ],
     },
     android: {
       transforms: ["name/yomp-kotlin"],

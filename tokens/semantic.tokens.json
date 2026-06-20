@@ -1,9 +1,39 @@
 {
-  "_comment": "PLACEHOLDER — replaced in the authoring slice.",
+  "status": {
+    "closed-text": { "$value": "{status.dogs.no.text}" }
+  },
+
   "page": {
-    "bg": {
-      "$value": "{brand.forest}",
-      "$type": "color"
-    }
+    "bg": { "$value": "{brand.cream}" }
+  },
+
+  "color": {
+    "text-primary": { "$value": "{brand.ink}" },
+    "text-secondary": { "$value": "{suite.ink.soft}" },
+    "parchment": { "$value": "{brand.parchment}" }
+  },
+
+  "text": {
+    "secondary": { "$value": "{suite.ink.soft}" }
+  },
+
+  "type": {
+    "venue-name": { "$value": "{type.subtitle}" },
+    "label-sm": { "$value": "{type.micro}" }
+  },
+
+  "radius": {
+    "sharp": { "$value": "{r.sharp}" }
+  },
+
+  "ink": {
+    "secondary": { "$value": "{suite.ink.soft}" }
+  },
+
+  "divider": { "$value": "{suite.rule}" },
+
+  "route": {
+    "stroke": { "$value": "{brand.clay}" },
+    "stroke-overlay": { "$value": "{brand.parchment}" }
   }
 }
