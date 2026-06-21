@@ -54,6 +54,44 @@
     "ring-gap": { "$value": "3px", "$type": "dimension" }
   },
 
+  "category": {
+    "$type": "color",
+    "pubs": {
+      "fill": { "$value": "#8b3a1e" },
+      "border": { "$value": "#6b2a10" }
+    },
+    "parks": {
+      "fill": { "$value": "#245530" },
+      "border": { "$value": "#163a20" }
+    },
+    "cafes": {
+      "fill": { "$value": "#7a5f08" },
+      "border": { "$value": "#5a4506" }
+    },
+    "stays": {
+      "fill": { "$value": "#2a3e72" },
+      "border": { "$value": "#1a2d58" }
+    },
+    "enclosed": {
+      "fill": { "$value": "#4a7a18" },
+      "border": { "$value": "#325510" }
+    },
+    "beaches": {
+      "fill": { "$value": "#4a7a8c" },
+      "border": { "$value": "#365a6b" }
+    },
+    "trails": {
+      "fill": { "$value": "#5a5038" },
+      "border": { "$value": "#3d3828" }
+    }
+  },
+
+  "marker": {
+    "$type": "color",
+    "no-dogs-fill": { "$value": "#b8ae97" },
+    "uncategorised": { "$value": "#6b7280" }
+  },
+
   "text": {
     "on-forest-muted": { "$value": "rgba(245,239,224,0.75)", "$type": "color" },
     "shadow-photo-heavy": {
