@@ -16,6 +16,13 @@
  */
 const HEX6 = /^#[0-9a-fA-F]{6}$/;
 const PX = /^-?[0-9]+(\.[0-9]+)?px$/;
+// Standalone rgba(r,g,b,a) only — anchored so composites that merely CONTAIN an
+// rgba() (gradients, shadows) never match and stay String. r/g/b are 0–255 ints,
+// a is a 0.0–1.0 float; whitespace-tolerant.
+const RGBA =
+  /^rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d*\.?\d+)\s*\)$/;
+const byteHex = (n) =>
+  Math.min(255, Math.max(0, n)).toString(16).toUpperCase().padStart(2, "0");
 
 export default {
   name: "yomp/compose-kotlin",
@@ -27,6 +34,13 @@ export default {
         emitted = `Color(0xFF${value.slice(1)})`;
       } else if (PX.test(value)) {
         emitted = `${value.slice(0, -2)}.dp`;
+      } else if (RGBA.test(value)) {
+        // Compose Color is 0xAARRGGBB — alpha is the LEADING byte.
+        const [, r, g, b, a] = value.match(RGBA);
+        const alpha = Math.round(parseFloat(a) * 255);
+        emitted = `Color(0x${byteHex(alpha)}${byteHex(+r)}${byteHex(
+          +g
+        )}${byteHex(+b)})`;
       } else {
         emitted = `"${value}"`;
       }
