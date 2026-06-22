@@ -68,12 +68,14 @@ object Tokens {
   val markerUncategorised = Color(0xFF6b7280)
   val textOnForestMuted = Color(0xBFF5EFE0)
   val textMeta = Color(0x8C3A3322)
+  val textPlaceholder = Color(0x803A3322)
   val textShadowPhotoHeavy = "0 1px 12px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)"
   val textShadowPhotoSoft = "0 1px 6px rgba(0,0,0,0.7)"
   val textSecondary = Color(0xFF6b7770)
   val inkOnImage = Color(0xFFfbf7ee)
   val inkOnImageSoft = Color(0xC7FBF7EE)
   val inkOnImageMuted = Color(0x8CFBF7EE)
+  val inkCharcoal = Color(0xFF4a4434)
   val inkSecondary = Color(0xFF6b7770)
   val tableRowAlt = Color(0x4DD4C9A8)
   val colorInputBg = Color(0x0DF5EFE0)

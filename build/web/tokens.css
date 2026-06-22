@@ -54,12 +54,14 @@
   --marker-uncategorised: #6b7280;
   --text-on-forest-muted: rgba(245,239,224,0.75);
   --text-meta: rgba(58,51,34,0.55);
+  --text-placeholder: rgba(58,51,34,0.5);
   --text-shadow-photo-heavy: 0 1px 12px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8);
   --text-shadow-photo-soft: 0 1px 6px rgba(0,0,0,0.7);
   --text-secondary: var(--suite-ink-soft);
   --ink-on-image: #fbf7ee;
   --ink-on-image-soft: rgba(251,247,238,0.78);
   --ink-on-image-muted: rgba(251,247,238,0.55);
+  --ink-charcoal: #4a4434;
   --ink-secondary: var(--suite-ink-soft);
   --table-row-alt: rgba(212,201,168,0.3);
   --color-input-bg: rgba(245,239,224,0.05);

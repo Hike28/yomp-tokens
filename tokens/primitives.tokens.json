@@ -106,6 +106,7 @@
   "text": {
     "on-forest-muted": { "$value": "rgba(245,239,224,0.75)", "$type": "color" },
     "meta": { "$value": "rgba(58,51,34,0.55)", "$type": "color" },
+    "placeholder": { "$value": "rgba(58,51,34,0.5)", "$type": "color" },
     "shadow-photo-heavy": {
       "$value": "0 1px 12px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)"
     },
@@ -116,7 +117,8 @@
     "$type": "color",
     "on-image": { "$value": "#fbf7ee" },
     "on-image-soft": { "$value": "rgba(251,247,238,0.78)" },
-    "on-image-muted": { "$value": "rgba(251,247,238,0.55)" }
+    "on-image-muted": { "$value": "rgba(251,247,238,0.55)" },
+    "charcoal": { "$value": "#4a4434" }
   },
 
   "table": {
