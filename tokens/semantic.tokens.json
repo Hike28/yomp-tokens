@@ -19,7 +19,29 @@
 
   "type": {
     "venue-name": { "$value": "{type.subtitle}" },
-    "label-sm": { "$value": "{type.micro}" }
+    "label-sm": { "$value": "{type.micro}" },
+    "overline-color": { "$value": "{accent.gold}" }
+  },
+
+  "category-dot": {
+    "pubs": { "$value": "{accent.ochre}" },
+    "cafes": { "$value": "{accent.burnt}" },
+    "parks": { "$value": "{accent.sage}" },
+    "beaches": { "$value": "{accent.teal}" }
+  },
+
+  "accent": {
+    "locate": { "$value": "{accent.teal}" }
+  },
+
+  "badge": {
+    "dot": { "$value": "{accent.ochre}" }
+  },
+
+  "ring": {
+    "amber": { "$value": "{accent.burnt}" },
+    "progress": { "$value": "{brand.forest-tint}" },
+    "track": { "$value": "{overlay.ink.10}" }
   },
 
   "radius": {

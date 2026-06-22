@@ -27,7 +27,17 @@ export default {
       let value = token.$value ?? token.value;
       const original = token.original?.$value ?? token.original?.value;
 
-      if (outputReferences && original != null && usesReferences(original)) {
+      if (token.$type === "shadow") {
+        // DTCG single-layer shadow composite → CSS `box-shadow` string.
+        const s = value;
+        return `  ${token.name}: ${s.offsetX} ${s.offsetY} ${s.blur} ${s.spread} ${s.color};`;
+      }
+
+      if (
+        outputReferences &&
+        typeof original === "string" &&
+        usesReferences(original)
+      ) {
         // Rebuild from the original string, swapping each `{a.b.c}` reference
         // for `var(--a-b-c)` using the referenced token's transformed name.
         value = original;

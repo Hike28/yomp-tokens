@@ -1,7 +1,16 @@
 package dog.yomp.tokens
 
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+
+data class ShadowSpec(
+  val offsetX: Dp,
+  val offsetY: Dp,
+  val blur: Dp,
+  val spread: Dp,
+  val color: Color,
+)
 
 object Tokens {
   val brandInkSoft = Color(0xA62D1B0E)
@@ -11,6 +20,8 @@ object Tokens {
   val brandForestShadow = Color(0xFF1e2417)
   val brandForestOverlay = Color(0x8C1C2F26)
   val brandParchment = Color(0xFFf5efe0)
+  val brandParchmentRaised = Color(0xFFfbf6e9)
+  val brandParchmentDim = Color(0xFFf0e9d2)
   val brandSand = Color(0xFFd4c9a8)
   val brandSandLight = Color(0xFFe8d5c0)
   val brandGold = Color(0xFFc8a078)
@@ -33,6 +44,12 @@ object Tokens {
   val cStays = Color(0xFF6b8e6f)
   val verifiedAccent = Color(0xFFb8893a)
   val verifiedRingGap = 3.dp
+  val accentOchre = Color(0xFFc08a4a)
+  val accentBurnt = Color(0xFFc07832)
+  val accentSage = Color(0xFF7c9b5e)
+  val accentTeal = Color(0xFF2d6d80)
+  val accentGold = Color(0xFFa07a3c)
+  val accentLocate = Color(0xFF2d6d80)
   val categoryPubsFill = Color(0xFF8b3a1e)
   val categoryPubsBorder = Color(0xFF6b2a10)
   val categoryParksFill = Color(0xFF245530)
@@ -50,6 +67,7 @@ object Tokens {
   val markerNoDogsFill = Color(0xFFb8ae97)
   val markerUncategorised = Color(0xFF6b7280)
   val textOnForestMuted = Color(0xBFF5EFE0)
+  val textMeta = Color(0x8C3A3322)
   val textShadowPhotoHeavy = "0 1px 12px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)"
   val textShadowPhotoSoft = "0 1px 6px rgba(0,0,0,0.7)"
   val textSecondary = Color(0xFF6b7770)
@@ -86,12 +104,19 @@ object Tokens {
   val statusConfirmedBg = Color(0x142D5A2D)
   val statusConfirmedBorder = Color(0x802D5A2D)
   val statusConfirmedText = Color(0xFF2d5a2d)
+  val statusTagBg = Color(0x1F324E2C)
+  val statusTagText = Color(0xFF2e4a28)
   val statusClosedText = Color(0xFF5a1a10)
+  val overlayInk10 = Color(0x1A2C3320)
   val overlayInk12 = Color(0x1F2C3320)
   val overlayInk15 = Color(0x262C3320)
   val overlayInk20 = Color(0x332C3320)
   val overlayInk04 = Color(0x0A2C3320)
   val overlayInk08 = Color(0x141C2F26)
+  val overlayCharcoal12 = Color(0x1F4A4434)
+  val overlayCharcoal16 = Color(0x294A4434)
+  val overlayCharcoal18 = Color(0x2E4A4434)
+  val overlayCharcoal22 = Color(0x384A4434)
   val overlayParchment15 = Color(0x26F5EFE0)
   val overlayParchment16 = Color(0x29F5EFE0)
   val overlayParchment18 = Color(0x2EF5EFE0)
@@ -150,6 +175,11 @@ object Tokens {
   val shadowCardWarm = "0 3px 10px rgba(60,40,20,0.1), 0 1px 2px rgba(60,40,20,0.05)"
   val shadowButtonPrimary = "0 4px 18px rgba(44,51,32,0.28), 0 1px 4px rgba(44,51,32,0.16), inset 0 1px 0 rgba(245,239,224,0.09)"
   val shadowInput = "inset 0 1px 3px rgba(0,0,0,0.14)"
+  val shadowControls = ShadowSpec(offsetX = 0.dp, offsetY = 4.dp, blur = 14.dp, spread = 0.dp, color = Color(0x382C3320))
+  val shadowBadge = ShadowSpec(offsetX = 0.dp, offsetY = 4.dp, blur = 14.dp, spread = 0.dp, color = Color(0x472C3320))
+  val shadowSearchPill = ShadowSpec(offsetX = 0.dp, offsetY = 4.dp, blur = 14.dp, spread = 0.dp, color = Color(0x2E2C3320))
+  val shadowChips = ShadowSpec(offsetX = 0.dp, offsetY = 2.dp, blur = 7.dp, spread = 0.dp, color = Color(0x242C3320))
+  val shadowCardRaised = ShadowSpec(offsetX = 0.dp, offsetY = 8.dp, blur = 28.dp, spread = 0.dp, color = Color(0x382C3320))
   val motionMicro = "120ms ease-out"
   val motionStandard = "240ms cubic-bezier(0.32,0.72,0,1)"
   val motionMacro = "360ms cubic-bezier(0.32,0.72,0,1)"
@@ -183,8 +213,13 @@ object Tokens {
   val typeCardVenue = "italic 500 15px/1.3 var(--font-display)"
   val typeCaption = "400 13px/1.42 var(--font-sans)"
   val typeHeroItalic = "italic 700 32px/1.1 var(--font-display)"
+  val typeOverline = "600 9.5px/1 var(--font-sans)"
+  val typeMeta = "400 11.5px/1 var(--font-sans)"
+  val typeChipLabel = "600 13px/1 var(--font-sans)"
+  val typeListSection = "600 11px/1 var(--font-sans)"
   val typeVenueName = "italic 600 22px/1.15 var(--font-display)"
   val typeLabelSm = "500 11px/1.2 var(--font-sans)"
+  val typeOverlineColor = Color(0xFFa07a3c)
   val fwRegular = "400"
   val fwMedium = "500"
   val fwSemibold = "600"
@@ -211,6 +246,7 @@ object Tokens {
   val letterSpacingTighter = "-0.02em"
   val letterSpacingSnug = "-0.005em"
   val letterSpacingLoose = "0.04em"
+  val letterSpacingOverline = "0.1em"
   val space1 = 4.dp
   val space2 = 8.dp
   val space3 = 12.dp
@@ -265,6 +301,14 @@ object Tokens {
   val zCookieBanner = "800"
   val zToast = "900"
   val pageBg = Color(0xFFe8dec8)
+  val categoryDotPubs = Color(0xFFc08a4a)
+  val categoryDotCafes = Color(0xFFc07832)
+  val categoryDotParks = Color(0xFF7c9b5e)
+  val categoryDotBeaches = Color(0xFF2d6d80)
+  val badgeDot = Color(0xFFc08a4a)
+  val ringAmber = Color(0xFFc07832)
+  val ringProgress = Color(0xFF3b4a2f)
+  val ringTrack = Color(0x1A2C3320)
   val radiusSharp = 2.dp
   val divider = Color(0x1F1C2F26)
   val routeStroke = Color(0xFF8b5a3c)
