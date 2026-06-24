@@ -49,6 +49,7 @@ object Tokens {
   val accentSage = Color(0xFF7c9b5e)
   val accentTeal = Color(0xFF2d6d80)
   val accentGold = Color(0xFFa07a3c)
+  val accentHeather = Color(0xFF8a7090)
   val accentLocate = Color(0xFF2d6d80)
   val categoryPubsFill = Color(0xFF8b3a1e)
   val categoryPubsBorder = Color(0xFF6b2a10)

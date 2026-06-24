@@ -62,7 +62,8 @@
     "burnt": { "$value": "#c07832" },
     "sage": { "$value": "#7c9b5e" },
     "teal": { "$value": "#2d6d80" },
-    "gold": { "$value": "#a07a3c" }
+    "gold": { "$value": "#a07a3c" },
+    "heather": { "$value": "#8a7090" }
   },
 
   "category": {
