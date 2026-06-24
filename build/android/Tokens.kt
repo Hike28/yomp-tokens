@@ -120,6 +120,8 @@ object Tokens {
   val overlayCharcoal16 = Color(0x294A4434)
   val overlayCharcoal18 = Color(0x2E4A4434)
   val overlayCharcoal22 = Color(0x384A4434)
+  val overlayCharcoal34 = Color(0x574A4434)
+  val overlayCharcoal50 = Color(0x804A4434)
   val overlayParchment15 = Color(0x26F5EFE0)
   val overlayParchment16 = Color(0x29F5EFE0)
   val overlayParchment18 = Color(0x2EF5EFE0)
