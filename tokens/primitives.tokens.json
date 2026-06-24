@@ -430,7 +430,13 @@
   "nav": {
     "$type": "dimension",
     "height": { "$value": "60px" },
-    "height-actual": { "$value": "72px" }
+    "height-actual": { "$value": "72px" },
+    "dormant": { "$value": "rgba(212,201,168,0.55)", "$type": "color" }
+  },
+
+  "pin": {
+    "$type": "color",
+    "ink": { "$value": "#3a3322" }
   },
 
   "topbar": {

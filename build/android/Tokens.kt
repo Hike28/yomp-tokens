@@ -271,6 +271,8 @@ object Tokens {
   val rStatStrip = 14.dp
   val navHeight = 60.dp
   val navHeightActual = 72.dp
+  val navDormant = Color(0x8CD4C9A8)
+  val pinInk = Color(0xFF3a3322)
   val topbarH = 60.dp
   val dragHandleWidth = 36.dp
   val dragHandleHeight = 3.dp

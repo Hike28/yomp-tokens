@@ -257,6 +257,8 @@
   --r-stat-strip: 14px;
   --nav-height: 60px;
   --nav-height-actual: 72px;
+  --nav-dormant: rgba(212,201,168,0.55);
+  --pin-ink: #3a3322;
   --topbar-h: 60px;
   --drag-handle-width: 36px;
   --drag-handle-height: 3px;
