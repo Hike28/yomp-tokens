@@ -297,23 +297,73 @@
     "input": { "$value": "inset 0 1px 3px rgba(0,0,0,0.14)" },
     "controls": {
       "$type": "shadow",
-      "$value": { "offsetX": "0px", "offsetY": "4px", "blur": "14px", "spread": "0px", "color": "rgba(44,51,32,0.22)" }
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "4px",
+        "blur": "14px",
+        "spread": "0px",
+        "color": "rgba(44,51,32,0.22)"
+      }
     },
     "badge": {
       "$type": "shadow",
-      "$value": { "offsetX": "0px", "offsetY": "4px", "blur": "14px", "spread": "0px", "color": "rgba(44,51,32,0.28)" }
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "4px",
+        "blur": "14px",
+        "spread": "0px",
+        "color": "rgba(44,51,32,0.28)"
+      }
     },
     "search-pill": {
       "$type": "shadow",
-      "$value": { "offsetX": "0px", "offsetY": "4px", "blur": "14px", "spread": "0px", "color": "rgba(44,51,32,0.18)" }
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "4px",
+        "blur": "14px",
+        "spread": "0px",
+        "color": "rgba(44,51,32,0.18)"
+      }
     },
     "chips": {
       "$type": "shadow",
-      "$value": { "offsetX": "0px", "offsetY": "2px", "blur": "7px", "spread": "0px", "color": "rgba(44,51,32,0.14)" }
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "2px",
+        "blur": "7px",
+        "spread": "0px",
+        "color": "rgba(44,51,32,0.14)"
+      }
     },
     "card-raised": {
       "$type": "shadow",
-      "$value": { "offsetX": "0px", "offsetY": "8px", "blur": "28px", "spread": "0px", "color": "rgba(44,51,32,0.22)" }
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "8px",
+        "blur": "28px",
+        "spread": "0px",
+        "color": "rgba(44,51,32,0.22)"
+      }
+    },
+    "heritage-ambient": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "12px",
+        "blur": "30px",
+        "spread": "0px",
+        "color": "rgba(44,51,32,0.2)"
+      }
+    },
+    "heritage-contact": {
+      "$type": "shadow",
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "3px",
+        "blur": "8px",
+        "spread": "0px",
+        "color": "rgba(60,40,20,0.12)"
+      }
     }
   },
 

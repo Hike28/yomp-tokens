@@ -59,11 +59,15 @@
   --text-shadow-photo-heavy: 0 1px 12px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8);
   --text-shadow-photo-soft: 0 1px 6px rgba(0,0,0,0.7);
   --text-secondary: var(--suite-ink-soft);
+  --text-heading: var(--brand-forest);
+  --text-descriptor: var(--text-meta);
+  --text-eyebrow-color: var(--brand-clay);
   --ink-on-image: #fbf7ee;
   --ink-on-image-soft: rgba(251,247,238,0.78);
   --ink-on-image-muted: rgba(251,247,238,0.55);
   --ink-charcoal: #4a4434;
   --ink-secondary: var(--suite-ink-soft);
+  --ink-icon: var(--brand-ink);
   --table-row-alt: rgba(212,201,168,0.3);
   --color-input-bg: rgba(245,239,224,0.05);
   --color-input-bg-focus: rgba(245,239,224,0.07);
@@ -71,6 +75,7 @@
   --color-text-primary: var(--brand-ink);
   --color-text-secondary: var(--suite-ink-soft);
   --color-parchment: var(--brand-parchment);
+  --color-surface-raised: var(--brand-parchment-raised);
   --status-danger: #b91c1c;
   --status-danger-bg: rgba(185,28,28,0.08);
   --status-error: #c0392b;
@@ -171,6 +176,8 @@
   --shadow-search-pill: 0px 4px 14px 0px rgba(44,51,32,0.18);
   --shadow-chips: 0px 2px 7px 0px rgba(44,51,32,0.14);
   --shadow-card-raised: 0px 8px 28px 0px rgba(44,51,32,0.22);
+  --shadow-heritage-ambient: 0px 12px 30px 0px rgba(44,51,32,0.2);
+  --shadow-heritage-contact: 0px 3px 8px 0px rgba(60,40,20,0.12);
   --motion-micro: 120ms ease-out;
   --motion-standard: 240ms cubic-bezier(0.32,0.72,0,1);
   --motion-macro: 360ms cubic-bezier(0.32,0.72,0,1);
@@ -303,6 +310,7 @@
   --ring-progress: var(--brand-forest-tint);
   --ring-track: var(--overlay-ink-10);
   --radius-sharp: var(--r-sharp);
+  --border-card: var(--pin-ink);
   --divider: var(--suite-rule);
   --route-stroke: var(--brand-clay);
   --route-stroke-overlay: var(--brand-parchment);

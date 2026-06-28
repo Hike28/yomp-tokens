@@ -73,11 +73,15 @@ object Tokens {
   val textShadowPhotoHeavy = "0 1px 12px rgba(0,0,0,0.9), 0 2px 4px rgba(0,0,0,0.8)"
   val textShadowPhotoSoft = "0 1px 6px rgba(0,0,0,0.7)"
   val textSecondary = Color(0xFF6b7770)
+  val textHeading = Color(0xFF2c3320)
+  val textDescriptor = Color(0x8C3A3322)
+  val textEyebrowColor = Color(0xFF8b5a3c)
   val inkOnImage = Color(0xFFfbf7ee)
   val inkOnImageSoft = Color(0xC7FBF7EE)
   val inkOnImageMuted = Color(0x8CFBF7EE)
   val inkCharcoal = Color(0xFF4a4434)
   val inkSecondary = Color(0xFF6b7770)
+  val inkIcon = Color(0xFF2d1b0e)
   val tableRowAlt = Color(0x4DD4C9A8)
   val colorInputBg = Color(0x0DF5EFE0)
   val colorInputBgFocus = Color(0x12F5EFE0)
@@ -85,6 +89,7 @@ object Tokens {
   val colorTextPrimary = Color(0xFF2d1b0e)
   val colorTextSecondary = Color(0xFF6b7770)
   val colorParchment = Color(0xFFf5efe0)
+  val colorSurfaceRaised = Color(0xFFfbf6e9)
   val statusDanger = Color(0xFFb91c1c)
   val statusDangerBg = Color(0x14B91C1C)
   val statusError = Color(0xFFc0392b)
@@ -185,6 +190,8 @@ object Tokens {
   val shadowSearchPill = ShadowSpec(offsetX = 0.dp, offsetY = 4.dp, blur = 14.dp, spread = 0.dp, color = Color(0x2E2C3320))
   val shadowChips = ShadowSpec(offsetX = 0.dp, offsetY = 2.dp, blur = 7.dp, spread = 0.dp, color = Color(0x242C3320))
   val shadowCardRaised = ShadowSpec(offsetX = 0.dp, offsetY = 8.dp, blur = 28.dp, spread = 0.dp, color = Color(0x382C3320))
+  val shadowHeritageAmbient = ShadowSpec(offsetX = 0.dp, offsetY = 12.dp, blur = 30.dp, spread = 0.dp, color = Color(0x332C3320))
+  val shadowHeritageContact = ShadowSpec(offsetX = 0.dp, offsetY = 3.dp, blur = 8.dp, spread = 0.dp, color = Color(0x1F3C2814))
   val motionMicro = "120ms ease-out"
   val motionStandard = "240ms cubic-bezier(0.32,0.72,0,1)"
   val motionMacro = "360ms cubic-bezier(0.32,0.72,0,1)"
@@ -317,6 +324,7 @@ object Tokens {
   val ringProgress = Color(0xFF3b4a2f)
   val ringTrack = Color(0x1A2C3320)
   val radiusSharp = 2.dp
+  val borderCard = Color(0xFF3a3322)
   val divider = Color(0x1F1C2F26)
   val routeStroke = Color(0xFF8b5a3c)
   val routeStrokeOverlay = Color(0xFFf5efe0)

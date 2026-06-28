@@ -10,11 +10,15 @@
   "color": {
     "text-primary": { "$value": "{brand.ink}" },
     "text-secondary": { "$value": "{suite.ink.soft}" },
-    "parchment": { "$value": "{brand.parchment}" }
+    "parchment": { "$value": "{brand.parchment}" },
+    "surface-raised": { "$value": "{brand.parchment-raised}" }
   },
 
   "text": {
-    "secondary": { "$value": "{suite.ink.soft}" }
+    "secondary": { "$value": "{suite.ink.soft}" },
+    "heading": { "$value": "{brand.forest}" },
+    "descriptor": { "$value": "{text.meta}" },
+    "eyebrow-color": { "$value": "{brand.clay}" }
   },
 
   "type": {
@@ -49,7 +53,12 @@
   },
 
   "ink": {
-    "secondary": { "$value": "{suite.ink.soft}" }
+    "secondary": { "$value": "{suite.ink.soft}" },
+    "icon": { "$value": "{brand.ink}" }
+  },
+
+  "border": {
+    "card": { "$value": "{pin.ink}" }
   },
 
   "divider": { "$value": "{suite.rule}" },
