@@ -265,6 +265,11 @@
   --r-suite-cta: 8px;
   --r-suite-card: 12px;
   --r-stat-strip: 14px;
+  --r-xl: 16px;
+  --r-form-card: 14px;
+  --r-segmented: 11px;
+  --r-inset-panel: 10px;
+  --r-control: 8px;
   --nav-height: 60px;
   --nav-height-actual: 72px;
   --nav-dormant: rgba(212,201,168,0.55);

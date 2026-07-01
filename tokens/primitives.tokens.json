@@ -477,7 +477,12 @@
     "pill": { "$value": "999px" },
     "suite-cta": { "$value": "8px" },
     "suite-card": { "$value": "12px" },
-    "stat-strip": { "$value": "14px" }
+    "stat-strip": { "$value": "14px" },
+    "xl": { "$value": "16px" },
+    "form-card": { "$value": "14px" },
+    "segmented": { "$value": "11px" },
+    "inset-panel": { "$value": "10px" },
+    "control": { "$value": "8px" }
   },
 
   "nav": {

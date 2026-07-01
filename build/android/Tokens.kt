@@ -279,6 +279,11 @@ object Tokens {
   val rSuiteCta = 8.dp
   val rSuiteCard = 12.dp
   val rStatStrip = 14.dp
+  val rXl = 16.dp
+  val rFormCard = 14.dp
+  val rSegmented = 11.dp
+  val rInsetPanel = 10.dp
+  val rControl = 8.dp
   val navHeight = 60.dp
   val navHeightActual = 72.dp
   val navDormant = Color(0x8CD4C9A8)
